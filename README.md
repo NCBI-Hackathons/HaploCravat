@@ -21,7 +21,7 @@ Open-CRAVAT, Python 3+
 
 ## Participants
 
-Kymberleigh Pagel
-Kyle Moad
-Mary Wood
-Arpit Mishra
+Kymberleigh Pagel, JHU, Baltimore MD, kpagel1@jhu.edu <br>
+Kyle Moad <br>
+Mary Wood <br>
+Arpit Mishra <br>
