@@ -18,3 +18,10 @@ Goal: To enhance the annotation of noncoding variation in support of massively p
 ## Dependencies 
 
 Open-CRAVAT, Python 3+
+
+## Participants
+
+Kymberleigh Pagel
+Kyle Moad
+Mary Wood
+Arpit Mishra
