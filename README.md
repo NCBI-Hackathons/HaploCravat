@@ -21,7 +21,7 @@ Open-CRAVAT, Python 3+
 
 ## Participants
 
-Kymberleigh Pagel, JHU, Baltimore MD, kpagel1@jhu.edu <br>
-Kyle Moad <br>
-Mary Wood <br>
-Arpit Mishra <br>
+Kymberleigh Pagel, Johns Hopkins University, Baltimore MD, kpagel1@jhu.edu <br>
+Kyle Moad, In Silico Solutions, Falls Church VA, kmoad@insilico.us.com <br>
+Mary Wood, Portland VA Research Foundation and Oregon Health and Science University, Portland OR, mary.a.wood.91@gmail.com <br>
+Arpit Mishra, University of Washington, Seattle, arpitm@uw.edu <br>
