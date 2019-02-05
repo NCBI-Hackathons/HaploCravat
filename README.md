@@ -1,5 +1,4 @@
-# Ultrafast_Variant_Ranking
-Ultrafast Variant Ranking for Cancer and Beyond!
+# Variant Annotation and Ranking for massively parallel reporter assays
 
 Our goal is to enhance the annotation of noncoding variation in support of massively parallel reporter assays, extending from initial analysis of variants to the generation of short nucleotide sequences for use in experimental design. We will do so within the previously existing Open-CRAVAT framework, designed for fast and easy annotation of genetic variation from a diverse set of tools and database resources.
 
