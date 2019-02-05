@@ -25,13 +25,12 @@ Presentation: https://docs.google.com/presentation/d/1XTkqG97xdkzo3g7vskjDrxHnCH
 * Python 3+ https://www.python.org/download/releases/3.0/
 * GATK ReadBackedPhasing https://software.broadinstitute.org/gatk/documentation/tooldocs/3.8-0/org_broadinstitute_gatk_tools_walkers_phasing_ReadBackedPhasing.php
 
-## How to use
+## How to access the data
 
-Each of these new resources wil be made freely available in the Open-CRAVAT store. The haplotype phasing is incorporated into the  in the following titles: VCFinfo . 
+Each of these new resources wil be made freely available in the Open-CRAVAT store. The haplotype phasing is incorporated into the  in the following titles: vcf-converter (haplotypes), dbsnp-converter (dbsnp IDs), VISTA Enhancer Browser annotator (VISTA data), and Javierre regulatory variant annotator (Javierre et al.). After installation of the above listed converters and annotators, inclusion of these modules with job processing will add the data to the results table. 
 
 ## Resources utilized
- 
-* dbSNP identifiers 
+
 * Promoter capture hic processed data for 17 human primary blood cell types DOI:https://doi.org/10.1016/j.cell.2016.09.037
 * Visel, A., Minovitsky, S., Dubchak, I., & Pennacchio, L. A. (2006). VISTA Enhancer Browser—a database of tissue-specific human enhancers. Nucleic acids research, 35(suppl_1), D88-D92. https://enhancer.lbl.gov/
 * Javierre, B. M., Burren, O. S., Wilder, S. P., Kreuzhuber, R., Hill, S. M., Sewitz, S., ... & Burden, F. (2016). Lineage-specific genome architecture links enhancers and non-coding disease variants to target gene promoters. Cell, 167(5), 1369-1384. 
