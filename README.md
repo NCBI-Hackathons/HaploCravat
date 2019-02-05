@@ -1,11 +1,11 @@
 # Ultrafast_Variant_Ranking
 Ultrafast Variant Ranking for Cancer and Beyond!
 
-Goal: To enhance the annotation of noncoding variation in support of massively parallel reporter assays (MPRAs), including the generation of oligomer sequences. 
+Goal: To enhance the annotation of noncoding variation in support of massively parallel reporter assays, including the generation of short nucleotide sequences to use experimentally. 
 
 ## What is MPRA? 
 
-...
+Massively parallel reporter assay (MPRA) are used to validate DNA nucleotides for their regulatory roles. MPRAs are one of the functional assays used to validate cis regulatory elements for their enhancer/silencer like activity. Both MPRAs and a similar assay called STARR-seq (self-transcribing active regulatory region sequencing) use short nucleotide sequences (100-400bp) to functionaly validate regulatory variants. 
 
 ## Workflow![alt text](asd2.png)
 
@@ -18,6 +18,11 @@ Goal: To enhance the annotation of noncoding variation in support of massively p
 ## Dependencies 
 
 Open-CRAVAT, Python 3+
+
+## Resources utilized: 
+ 
+* dbSNP identifiers 
+* Promoter capture hic processed data for 17 human primary blood cell types DOI:https://doi.org/10.1016/j.cell.2016.09.037
 
 ## Participants
 
