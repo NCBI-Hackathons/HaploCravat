@@ -17,7 +17,9 @@ Massively parallel reporter assay (MPRA) are used to validate DNA nucleotides fo
 
 ## Dependencies 
 
-Open-CRAVAT, Python 3+
+* Open-CRAVAT https://github.com/KarchinLab/open-cravat/wiki 
+* Python 3+ https://www.python.org/download/releases/3.0/
+* GATK ReadBackedPhasing https://software.broadinstitute.org/gatk/documentation/tooldocs/3.8-0/org_broadinstitute_gatk_tools_walkers_phasing_ReadBackedPhasing.php
 
 ## Resources utilized: 
  
