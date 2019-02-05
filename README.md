@@ -11,6 +11,8 @@ MPRAs are used to validate DNA nucleotides for their regulatory roles. MPRAs are
 
 ## Workflow![alt text](asd2.png)
 
+Presentation: https://docs.google.com/presentation/d/1XTkqG97xdkzo3g7vskjDrxHnCHOkqNEl3TbnfOMApuM/edit?usp=sharing 
+
 ## Goals 
   
 * We will add functionality for variant input via dbSNP identifiers (rsids). 
