@@ -30,6 +30,7 @@ MPRAs are used to validate DNA nucleotides for their regulatory roles. MPRAs are
 * dbSNP identifiers 
 * Promoter capture hic processed data for 17 human primary blood cell types DOI:https://doi.org/10.1016/j.cell.2016.09.037
 * Vista Enhance Browser https://enhancer.lbl.gov/
+* Javierre, B. M., Burren, O. S., Wilder, S. P., Kreuzhuber, R., Hill, S. M., Sewitz, S., ... & Burden, F. (2016). Lineage-specific genome architecture links enhancers and non-coding disease variants to target gene promoters. Cell, 167(5), 1369-1384. 
 
 ## Participants
 
