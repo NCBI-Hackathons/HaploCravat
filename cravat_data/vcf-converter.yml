@@ -1,0 +1,15 @@
+title: VCF Converter
+version: 1.0.4
+type: converter
+description: Converter for VCF format input
+developer:
+  name: 'Kyle Moad'
+  organization: 'In Silico Solutions'
+  email: 'kmoad@insilico.us.com'
+  website: 'http://www.insilico.us.com'
+  citation: ''
+
+release_note:
+  1.0.3: supports VarScan VCF format.
+  1.0.2: . in ID becomes empty tag instead of VAR_ tag.
+  1.0.1: detects format from extension .vcf.
