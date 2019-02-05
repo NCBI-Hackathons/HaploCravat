@@ -3,9 +3,11 @@ Ultrafast Variant Ranking for Cancer and Beyond!
 
 Goal: To enhance the annotation of noncoding variation in support of massively parallel reporter assays, including the generation of short nucleotide sequences to use experimentally. 
 
-## What is MPRA? 
+## Introduction 
 
-Massively parallel reporter assay (MPRA) are used to validate DNA nucleotides for their regulatory roles. MPRAs are one of the functional assays used to validate cis regulatory elements for their enhancer/silencer like activity. Both MPRAs and a similar assay called STARR-seq (self-transcribing active regulatory region sequencing) use short nucleotide sequences (100-400bp) to functionaly validate regulatory variants. 
+Open-CRAVAT is a python package that performs genomic variant interpretation. The modular and locally-installed command-line or GUI interface allows for  annoations of gene- and variant-level impact, interactions, conservation, and scoring. In this work, we advance the platform to assist in the interrogation of genetic variation via massively parallel reporter assays (MPRAs). 
+
+MPRAs are used to validate DNA nucleotides for their regulatory roles. MPRAs are one of the functional assays used to validate cis regulatory elements for their enhancer/silencer like activity. Both MPRAs and a similar assay called STARR-seq (self-transcribing active regulatory region sequencing) use short nucleotide sequences (100-400bp) to functionaly validate regulatory variants. 
 
 ## Workflow![alt text](asd2.png)
 
@@ -21,7 +23,7 @@ Massively parallel reporter assay (MPRA) are used to validate DNA nucleotides fo
 * Python 3+ https://www.python.org/download/releases/3.0/
 * GATK ReadBackedPhasing https://software.broadinstitute.org/gatk/documentation/tooldocs/3.8-0/org_broadinstitute_gatk_tools_walkers_phasing_ReadBackedPhasing.php
 
-## Resources utilized: 
+## Resources utilized
  
 * dbSNP identifiers 
 * Promoter capture hic processed data for 17 human primary blood cell types DOI:https://doi.org/10.1016/j.cell.2016.09.037
