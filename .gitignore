@@ -1,2 +1,2 @@
-dbsnp-converter/build/*
+dbsnp-converter/build/data*
 dbsnp-converter/module/data/*
