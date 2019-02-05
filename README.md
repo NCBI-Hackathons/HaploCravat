@@ -14,14 +14,16 @@ MPRAs are used to validate DNA nucleotides for their regulatory roles. MPRAs are
 ## Goals 
   
 * We will add functionality for variant input via dbSNP identifiers (rsids). 
-* For users that have run GATK ReadBackedPhasing, the tool will now automatically generate haplotype block annotations. 
-* Module to generate short sequences to be used in MPRA  
+* For users that have utilized GATK ReadBackedPhasing to annotate their VCF file, Open-CRAVAT will automatically generate a results column describing haplotype block annotations in the initial VCF pre-processing step. A stretch goal is expand the method to incorporate other similar tools, if the output format is suitable for inclusion in the method. 
+* Addition of a store module that generates short sequences to be used in MPRAs. Given an rsID and reference/alternate allele pair, the module will generate a pair of nucleotide sequences representing the local region of the genome (+/- 50 residues on either side of the locus). 
 
 ## Dependencies 
 
 * Open-CRAVAT https://github.com/KarchinLab/open-cravat/wiki 
 * Python 3+ https://www.python.org/download/releases/3.0/
 * GATK ReadBackedPhasing https://software.broadinstitute.org/gatk/documentation/tooldocs/3.8-0/org_broadinstitute_gatk_tools_walkers_phasing_ReadBackedPhasing.php
+
+## How to use
 
 ## Resources utilized
  
