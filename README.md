@@ -27,11 +27,13 @@ Presentation: https://docs.google.com/presentation/d/1XTkqG97xdkzo3g7vskjDrxHnCH
 
 ## How to use
 
+Each of these new resources wil be made freely available in the Open-CRAVAT store. The haplotype phasing is incorporated into the  in the following titles: VCFinfo . 
+
 ## Resources utilized
  
 * dbSNP identifiers 
 * Promoter capture hic processed data for 17 human primary blood cell types DOI:https://doi.org/10.1016/j.cell.2016.09.037
-* Vista Enhance Browser https://enhancer.lbl.gov/
+* Visel, A., Minovitsky, S., Dubchak, I., & Pennacchio, L. A. (2006). VISTA Enhancer Browser—a database of tissue-specific human enhancers. Nucleic acids research, 35(suppl_1), D88-D92. https://enhancer.lbl.gov/
 * Javierre, B. M., Burren, O. S., Wilder, S. P., Kreuzhuber, R., Hill, S. M., Sewitz, S., ... & Burden, F. (2016). Lineage-specific genome architecture links enhancers and non-coding disease variants to target gene promoters. Cell, 167(5), 1369-1384. 
 
 ## Participants
