@@ -13,8 +13,8 @@ MPRAs are used to validate DNA nucleotides for their regulatory roles. MPRAs are
 
 ## Goals 
   
-* Support variant input via dbSNP identifiers (rsids)
-* Enable haplotype phasing as an optional pre-processing step
+* We will add functionality for variant input via dbSNP identifiers (rsids). 
+* For users that have run GATK ReadBackedPhasing, the tool will now automatically generate haplotype block annotations. 
 * Module to generate short sequences to be used in MPRA  
 
 ## Dependencies 
