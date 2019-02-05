@@ -5,7 +5,7 @@ Goal: To enhance the annotation of noncoding variation in support of massively p
 
 ## What is MPRA? 
 
-Massively parallel reporter assay (MPRA) are used to validate DNA nucleotides for their regulatory roles. MPRAs are one of the functional assays used to validate cis regulatory elements for their enhancer/silencer like activity. Both MPRAs and a similar assay called STARR-seq (self-transcribing active regulatory region sequencing) use short nucleotide sequences (100-400bp) to functionaly validate regulatory variants.
+Massively parallel reporter assay (MPRA) are used to validate DNA nucleotides for their regulatory roles. MPRAs are one of the functional assays used to validate cis regulatory elements for their enhancer/silencer like activity. Both MPRAs and a similar assay called STARR-seq (self-transcribing active regulatory region sequencing) use short nucleotide sequences (100-400bp) to functionaly validate regulatory variants. 
 
 ## Workflow![alt text](asd2.png)
 
