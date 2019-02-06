@@ -1,2 +1,4 @@
 dbsnp-converter/build/data*
 dbsnp-converter/dbsnp-converter/data/*
+enhancer/data/*
+**.pyc
