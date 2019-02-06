@@ -1,8 +1,6 @@
 # OpenCRAVAT for massively parallel reporter assays
 
-## Insert BLING here!
-
-Our goal is to enhance the annotation of noncoding variation in support of massively parallel reporter assays, extending from initial analysis of variants to the generation of short nucleotide sequences for use in experimental design. We will do so within the previously existing Open-CRAVAT framework, designed for fast and easy annotation of genetic variation from a diverse set of tools and database resources.
+Noncoding regulatory variation are an under-represented aspect of genetic annotation, partly due to the recent and ongoing advances in experimental analysis techniques. Broader conclusions on the functional relevance of an individual noncoding variant are complicated by the diversity of tools and methods that report features in a particular cell line and organism, subject to experimental variance. In this work we seek to enhance the annotation of noncoding variation in support of massively parallel reporter assays, extending from initial analysis of variants to the generation of short nucleotide sequences for use in experimental design. We do so within the previously existing Open-CRAVAT framework, designed for fast and easy annotation of genetic variation from a diverse set of tools and database resources.
 
 ## Introduction 
 
