@@ -17,6 +17,8 @@ Final presentation: https://docs.google.com/presentation/d/12_D8HLDNKR5kaBVTxL2m
   
 * As a significant proportion of use-cases for reseach do not consist of VCF-formatted genetic variation. We will add functionality for Open-CRAVAT to allow for variant input via dbSNP identifiers (rsids). The large size of the dbSNP database will require software design. 
 * For users that have utilized GATK ReadBackedPhasing to annotate their VCF file, Open-CRAVAT will automatically generate a results column describing haplotype block annotations in the initial VCF pre-processing step. A stretch goal is expand the method to incorporate other similar tools, if the output format is suitable for inclusion in the method. The remaining corpus of phasing software appears to output format that is not in VCF format, and so their support in the Open-CRAVAT framework may be subject to their use in the field. 
+[alt text](haplotype.png)
+
 * Addition of a store annotators that annotate noncoding variation with known regulatory relationship to facilitate filtering of variants prior to MPRA analysis. 
 * A new module to generate short sequences to be used in MPRAs. Given an rsID and reference/alternate allele pair, the module will generate a pair of nucleotide sequences representing the local region of the genome (+/- 50 residues on either side of the locus). 
 
