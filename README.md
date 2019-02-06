@@ -10,7 +10,8 @@ MPRAs are used to validate DNA nucleotides for their regulatory roles. MPRAs are
 
 ## Workflow![alt text](asd2.png)
 
-Presentation: https://docs.google.com/presentation/d/1XTkqG97xdkzo3g7vskjDrxHnCHOkqNEl3TbnfOMApuM 
+Initial presentation: https://docs.google.com/presentation/d/1XTkqG97xdkzo3g7vskjDrxHnCHOkqNEl3TbnfOMApuM 
+Final presentation: https://docs.google.com/presentation/d/12_D8HLDNKR5kaBVTxL2muUocv0uRPP7Z-q-5l18eI00 
 
 ## Goals 
   
