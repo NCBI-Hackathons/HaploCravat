@@ -1,0 +1,11 @@
+title: dbSNP Converter
+version: 1.0.0
+sourcedata: '151'
+type: converter
+description: File converter for dbsnp rsid input
+developer:
+  name: 'Kyle Moad'
+  organization: 'In Silico Solutions'
+  email: 'kmoad@insilico.us.com'
+  website: 'http://www.insilico.us.com'
+  citation: ''
