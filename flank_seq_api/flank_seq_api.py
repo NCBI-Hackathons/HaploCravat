@@ -25,7 +25,6 @@ class CravatAnnotator(BaseAnnotator):
             end = end,
             nflank = nflank,
         )
-        print(full_url)
         r = requests.get(full_url)
         if r.ok:
             ref_seq = r.text
