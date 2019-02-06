@@ -6,6 +6,9 @@ Noncoding regulatory variation are an under-represented aspect of genetic annota
 
 Open-CRAVAT is a python package that performs genomic variant interpretation. The modular and locally-installed command-line or GUI interface allows for  annoations of gene- and variant-level impact, interactions, conservation, and scoring. In this work, we advance the platform to assist in the interrogation of genetic variation via massively parallel reporter assays (MPRAs). 
 
+![alt text](results.png) 
+*Example of the Open-CRAVAT interface*
+
 MPRAs are used to validate DNA nucleotides for their regulatory roles. MPRAs are one of the functional assays used to validate cis regulatory elements for their enhancer/silencer like activity. Both MPRAs and a similar assay called STARR-seq (self-transcribing active regulatory region sequencing) use short nucleotide sequences (100-400bp) to functionaly validate regulatory variants. 
 
 ## Workflow![alt text](asd2.png)
@@ -13,12 +16,25 @@ MPRAs are used to validate DNA nucleotides for their regulatory roles. MPRAs are
 Initial presentation: https://docs.google.com/presentation/d/1XTkqG97xdkzo3g7vskjDrxHnCHOkqNEl3TbnfOMApuM <br>
 Final presentation: https://docs.google.com/presentation/d/12_D8HLDNKR5kaBVTxL2muUocv0uRPP7Z-q-5l18eI00 
 
-## Goals 
+## Deliverables 
   
-* As a significant proportion of use-cases for reseach do not consist of VCF-formatted genetic variation. We will add functionality for Open-CRAVAT to allow for variant input via dbSNP identifiers (rsids). The large size of the dbSNP database will require software design. 
-* For users that have utilized GATK ReadBackedPhasing to annotate their VCF file, Open-CRAVAT will automatically generate a results column describing haplotype block annotations in the initial VCF pre-processing step. A stretch goal is expand the method to incorporate other similar tools, if the output format is suitable for inclusion in the method. The remaining corpus of phasing software appears to output format that is not in VCF format, and so their support in the Open-CRAVAT framework may be subject to their use in the field. 
-* Addition of a store annotators that annotate noncoding variation with known regulatory relationship to facilitate filtering of variants prior to MPRA analysis. 
-* A new module to generate short sequences to be used in MPRAs. Given an rsID and reference/alternate allele pair, the module will generate a pair of nucleotide sequences representing the local region of the genome (+/- 50 residues on either side of the locus). 
+* **dbSNP identifiers allowed as variant input** 
+
+As a significant proportion of use-cases for reseach do not consist of VCF-formatted genetic variation. We will add functionality for Open-CRAVAT to allow for variant input via dbSNP identifiers (rsids). The large size of the dbSNP database will require software design. 
+
+* **Haplotype phasing** 
+
+For users that have utilized GATK ReadBackedPhasing to annotate their VCF file, Open-CRAVAT will automatically generate a results column describing haplotype block annotations in the initial VCF pre-processing step. A stretch goal is expand the method to incorporate other similar tools, if the output format is suitable for inclusion in the method. The remaining corpus of phasing software appears to output format that is not in VCF format, and so their support in the Open-CRAVAT framework may be subject to their use in the field. 
+
+![alt text](haplotype.png)
+
+* **Addition of data resources from functional assays** 
+
+Addition of a store annotators that annotate noncoding variation with known regulatory relationship to facilitate filtering of variants prior to MPRA analysis. 
+
+* **Output flanking regions for functional assays** 
+
+A new module to generate short sequences to be used in MPRAs. Given an rsID and reference/alternate allele pair, the module will generate a pair of nucleotide sequences representing the local region of the genome (+/- 50 residues on either side of the locus). 
 
 ## Dependencies 
 
