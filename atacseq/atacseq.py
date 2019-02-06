@@ -13,7 +13,9 @@ class CravatAnnotator(BaseAnnotator):
         out = {}
         chrom = input_data['chrom']
         pos = input_data['pos']
-        self.cursor.execute(self.query_template,[chrom,pos,pos])
+        q = 'select disease, CausalSNP, Element_type from ATACdata_pancancer where Chromosome="{}" and start<={} and {}<=end;'.format(chrom,pos-1,pos-1)
+        print(q)
+        self.cursor.execute(q)
         diseases = []
         snps = []
         elements = []

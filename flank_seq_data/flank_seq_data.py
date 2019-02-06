@@ -4,11 +4,16 @@ from cravat import InvalidData
 import sqlite3
 import os
 import requests
+from bowtie_index import BowtieIndexReference
 
 class CravatAnnotator(BaseAnnotator):
 
     def setup(self): 
         self.server_url = 'https://rest.ensembl.org'
+        print(self.data_dir)
+        fprefix = 'GCA_000001405.15_GRCh38_no_alt_analysis_set'
+        prefix = os.path.join(self.data_dir,fprefix)
+        self.btr = BowtieIndexReference(prefix)
     
     def annotate(self, input_data, secondary_data=None):
         out = {}
@@ -18,16 +23,11 @@ class CravatAnnotator(BaseAnnotator):
         alt_bases = input_data['alt_base'].replace('-','')
         end=start+len(ref_bases)+1
         nflank = self.conf['options']['flanking_bases']
-        full_url = '{base}/sequence/region/human/{chrom}:{start}..{end}:1?expand_5prime={nflank}&expand_3prime={nflank}&content-type=text/plain'.format(
-            base = self.server_url,
-            chrom = chrom,
-            start = start,
-            end = end,
-            nflank = nflank,
-        )
-        r = requests.get(full_url)
-        if r.ok:
-            ref_seq = r.text
+        range_start = start - nflank
+        range_end = end + nflank
+        range_len = range_end - range_start
+        ref_seq = self.btr.get_stretch(chrom, range_start - 1, range_len)
+        if ref_seq != '':
             alt_seq = ref_seq[:nflank] + alt_bases + ref_seq[nflank+len(ref_bases):]
             out['ref_seq'] = ref_seq
             out['alt_seq'] = alt_seq

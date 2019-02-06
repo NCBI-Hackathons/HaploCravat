@@ -2,3 +2,4 @@ dbsnp-converter/build/data*
 dbsnp-converter/dbsnp-converter/data/*
 enhancer/data/*
 **.pyc
+flank_seq_data/data/
