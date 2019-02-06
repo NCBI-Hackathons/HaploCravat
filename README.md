@@ -1,4 +1,4 @@
-# Variant annotation in OpenCRAVAT for massively parallel reporter assays
+# OpenCRAVAT for massively parallel reporter assays
 
 ## Insert BLING here!
 
