@@ -8,11 +8,10 @@ developer:
   website: https://enhancer.lbl.gov/
 level: variant
 output_columns:
-- name: elementnumber
-  title: Class
+- name: features
+  title: Features
   type: string
   width: 70
-  filterable: false
 tags:
 - noncoding
 - genomic features
