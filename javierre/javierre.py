@@ -13,27 +13,11 @@ class CravatAnnotator (BaseAnnotator):
         chrom = input_data['chrom']
         pos = input_data['pos']
         
-        out = {'oenam': []}
-        
-        bins = get_ucsc_bins(pos)
-        pos = str(pos)
-        for bin in bins:
-            query = 'select class, name from enhancer ' +\
-                'where binno=' + str(bin) + ' and ' +\
-                'chrom="' + chrom + '" and ' +\
-                'start<=' + pos + ' and end>=' + pos
-            self.cursor.execute(query) 
-            results = self.cursor.fetchall()
-            
-            if len(results) == 0:
-                continue
-            
-            for result in results:
-                (feature) = result
-                out['oenam'].append(feature)
-        
-        out['oenam'] = ','.join(out['oenam'])
-        
+        q = 'select Target_gene_name from capture where PIR_Chr="{cnum}" and PIR_Start<={pos} and PIR_End>={pos};'.format(cnum = chrom.replace('chr',''), pos=pos)
+        print(q)
+        self.cursor.execute(q)
+        targets = [r[0] for r in self.cursor if r[0] is not None]
+        out['targets'] = ';'.join(targets)
         return out
         
 if __name__ == '__main__':

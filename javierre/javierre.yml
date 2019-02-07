@@ -8,8 +8,8 @@ developer:
   website: https://doi.org/10.1016/j.cell.2016.09.037
 level: variant
 output_columns:
-- name: oenam
-  title: Promoter interaction region
+- name: targets
+  title: Gene Targets
   type: string
   width: 70
   filterable: true
