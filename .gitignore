@@ -3,3 +3,4 @@ dbsnp-converter/dbsnp-converter/data/*
 enhancer/data/*
 **.pyc
 flank_seq_data/data/
+javierre/data/
