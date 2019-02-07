@@ -22,7 +22,9 @@ class CravatAnnotator (BaseAnnotator):
                 'where binno=' + str(bin) + ' and ' +\
                 'chrom="' + chrom + '" and ' +\
                 'start<=' + pos + ' and end>=' + pos
+            print(query)
             self.cursor.execute(query) 
+            print(query)
             results = self.cursor.fetchall()
             
             if len(results) == 0:
