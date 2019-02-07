@@ -19,7 +19,6 @@ class CravatAnnotator(BaseAnnotator):
         snps = []
         elements = []
         for disease, snp, element in self.cursor:
-            self.logger.critical([disease, snp, element])
             disease = disease if disease is not None else ''
             snp = snp if snp is not None else ''
             element = element if element is not None else ''
