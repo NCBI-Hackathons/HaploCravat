@@ -2,6 +2,7 @@ widgetGenerators['haplotypes'] = {
 	'variant': {
 		'width': 280, 
 		'height': 280, 
+		'word-break': 'break-word',
 		'function': function (div, row, tabName) {
 			addInfoLine(div, row, 'Chromosome', 'base__chrom', tabName);
 			addInfoLine(div, row, 'Haplotype Block ID', 'vcfinfo__hap_block', tabName);
@@ -11,7 +12,7 @@ widgetGenerators['haplotypes'] = {
 					var rowChrom = infomgr.getRowValue(tabName, row, 'base__chrom');
 					console.log(rowChrom)
 					var allRows = infomgr.datas.variant;
-					var table = getWidgetTableFrame();
+					var table = getWidgetTableFrame(['10%', '10%', '10%', '10%', '10%', "40%", '10%']);
 					addEl(div, table);
 					var thead = getWidgetTableHead(['Chromosome', 'Position', 'Reference Allele', 'Alternate Allele', 
 													'Haplotype Strand', 'Transcript', 'Amino Acid Change']);

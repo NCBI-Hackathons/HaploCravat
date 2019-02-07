@@ -12,28 +12,16 @@ class CravatAnnotator (BaseAnnotator):
         
         chrom = input_data['chrom']
         pos = input_data['pos']
-        
-        out = {'feature': []}
-        
-        bins = get_ucsc_bins(pos)
-        pos = str(pos)
-        for bin in bins:
-            query = 'select class, name from enhancer ' +\
-                'where binno=' + str(bin) + ' and ' +\
-                'chrom="' + chrom + '" and ' +\
-                'start<=' + pos + ' and end>=' + pos
-            self.cursor.execute(query) 
-            results = self.cursor.fetchall()
-            
-            if len(results) == 0:
-                continue
-            
-            for result in results:
-                (feature) = result
-                out['feature'].append(feature)
-        
-        out['feature'] = ','.join(out['feature'])
-        
+        features = [] 
+        q = 'select feature from data where chrom="{chrom}" and start<={pos} and end>={pos};'.format(
+            chrom=chrom,
+            pos=pos
+        )
+        self.cursor.execute(q)
+        print(q) 
+        features = [r[0].strip() for r in self.cursor if r[0] is not None]
+        out['features'] = ','.join(features)
+        print(out)
         return out
         
 if __name__ == '__main__':
