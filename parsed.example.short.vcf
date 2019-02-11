@@ -1,0 +1,306 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=DETP20,Description="Average distance of the variant base to the effective 3' end is less than 0.2">
+##FILTER=<ID=DPFilter,Description="DP < 10.0">
+##FILTER=<ID=IRC,Description="Unable to grab any sort of readcount for either the reference or the variant allele">
+##FILTER=<ID=LowQual,Description="Low quality">
+##FILTER=<ID=MMQS100,Description="The average mismatch quality sum of reads supporting the variant is greater than 100">
+##FILTER=<ID=MMQSD50,Description="Difference in average mismatch quality sum between variant and reference supporting reads is greater than 50">
+##FILTER=<ID=MQD30,Description="Difference in average mapping quality sum between variant and reference supporting reads is greater than 30">
+##FILTER=<ID=MVC4,Description="Less than 4 high quality reads support the variant">
+##FILTER=<ID=MVF5,Description="Variant allele frequency is less than 0.05">
+##FILTER=<ID=NRC,Description="Unable to grab readcounts for variant allele">
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=PB10,Description="Average position on read less than 0.1 or greater than 0.9 fraction of the read length">
+##FILTER=<ID=QDFilter,Description="QD < 2.0">
+##FILTER=<ID=QUALFilter,Description="QUAL < 100.0">
+##FILTER=<ID=REJECT,Description="Rejected as a confident somatic mutation">
+##FILTER=<ID=RLD25,Description="Difference in average clipped read length between variant and reference supporting reads is greater than 25">
+##FILTER=<ID=SB1,Description="Reads supporting the variant have less than 0.01 fraction of the reads on one strand, but reference supporting reads are not similarly biased">
+##FILTER=<ID=SnpCluster,Description="SNPs found in clusters">
+##FILTER=<ID=Tier1,Description="Confident level 1">
+##FILTER=<ID=Tier2,Description="Confident level 2">
+##FILTER=<ID=Tier3,Description="Confident level 3">
+##FILTER=<ID=Tier4,Description="Confident level 4">
+##FILTER=<ID=Tier5,Description="Confident level 5">
+##FILTER=<ID=blat,Description="The call did not pass the BLAT filter">
+##FILTER=<ID=diffref,Description="Position skipped, different references in files">
+##FILTER=<ID=dnmnab,Description="DNA Normal minimum ALT bases is less than user-specified cut-off">
+##FILTER=<ID=dnmnap,Description="DNA Normal minimum ALT percentage is less than user-specified cut-off">
+##FILTER=<ID=dnmnbq,Description="DNA Normal minimum average ALT base quality is less than user-specified cut-off">
+##FILTER=<ID=dnmnrb,Description="DNA Normal minimum REF bases is less than user-specified cut-off">
+##FILTER=<ID=dnmnrp,Description="DNA Normal minimum REF percentage is less than user-specified cut-off">
+##FILTER=<ID=dnmntb,Description="DNA Normal minimum total bases is less than user-specified cut-off">
+##FILTER=<ID=dnmxerr,Description="DNA Normal maximum total ALT percentage attributed to error (sequencing, contamination, etc.) is greater than user-specified cut-off">
+##FILTER=<ID=dnmxtb,Description="DNA Normal maximum total bases is greater than user-specified cut-off">
+##FILTER=<ID=dnsbias,Description="Strand bias, majority of reads supporting ALT are on forward OR reverse strand">
+##FILTER=<ID=dtmnab,Description="DNA Tumor minimum ALT bases is less than user-specified cut-off">
+##FILTER=<ID=dtmnap,Description="DNA Tumor minimum ALT percentage is less than user-specified cut-off">
+##FILTER=<ID=dtmnbq,Description="DNA Tumor minimum average ALT base quality is less than user-specified cut-off">
+##FILTER=<ID=dtmnrb,Description="DNA Tumor minimum REF bases is less than user-specified cut-off">
+##FILTER=<ID=dtmnrp,Description="DNA Tumor minimum REF percentage is less than user-specified cut-off">
+##FILTER=<ID=dtmntb,Description="DNA Tumor minimum total bases is less than user-specified cut-off">
+##FILTER=<ID=dtmxerr,Description="DNA Tumor maximum total ALT percentage attributed to error (sequencing, contamination, etc.) is greater than user-specified cut-off">
+##FILTER=<ID=dtmxtb,Description="DNA Tumor maximum total bases is greater than user-specified cut-off">
+##FILTER=<ID=dtsbias,Description="Strand bias, majority of reads supporting ALT are on forward OR reverse strand">
+##FILTER=<ID=mba,Description="Minimum ALT bases is less than user-specified cut-off">
+##FILTER=<ID=mbt,Description="Minimum total bases is less than user-specified cut-off">
+##FILTER=<ID=multi,Description="There are multiple ALT alleles across all samples at this position">
+##FILTER=<ID=noref,Description="Position skipped, reference=N">
+##FILTER=<ID=pbias,Description="The call did not pass the positional bias filter">
+##FILTER=<ID=perfect5,Description="There were not enough perfect reads for this position.">
+##FILTER=<ID=perfectsbias,Description="A strand bias exists on the perfect reads.">
+##FILTER=<ID=rnmnab,Description="RNA Normal minimum ALT bases is less than user-specified cut-off">
+##FILTER=<ID=rnmnap,Description="RNA Normal minimum ALT percentage is less than user-specified cut-off">
+##FILTER=<ID=rnmnbq,Description="RNA Normal minimum average ALT base quality is less than user-specified cut-off">
+##FILTER=<ID=rnmntb,Description="RNA Normal minimum total bases is less than user-specified cut-off">
+##FILTER=<ID=rnmxerr,Description="RNA Normal maximum total ALT percentage attributed to error (sequencing, contamination, etc.) is greater than user-specified cut-off">
+##FILTER=<ID=rnmxtb,Description="RNA Normal maximum total bases is greater than user-specified cut-off">
+##FILTER=<ID=rnsbias,Description="Strand bias, majority of reads supporting ALT are on forward OR reverse strand">
+##FILTER=<ID=rtmnab,Description="RNA Tumor minimum ALT bases is less than user-specified cut-off">
+##FILTER=<ID=rtmnap,Description="RNA Tumor minimum ALT percentage is less than user-specified cut-off">
+##FILTER=<ID=rtmnbq,Description="RNA Tumor minimum average ALT base quality is less than user-specified cut-off">
+##FILTER=<ID=rtmntb,Description="RNA Tumor minimum total bases is less than user-specified cut-off">
+##FILTER=<ID=rtmxerr,Description="RNA Tumor maximum total ALT percentage attributed to error (sequencing, contamination, etc.) is greater than user-specified cut-off">
+##FILTER=<ID=rtmxtb,Description="RNA Tumor maximum total bases is greater than user-specified cut-off">
+##FILTER=<ID=rtsbias,Description="Strand bias, majority of reads supporting ALT are on forward OR reverse strand">
+##FILTER=<ID=str10,Description="Fails VarScan Strand Filter">
+##FORMAT=<ID=AD,Number=.,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=AF,Number=.,Type=Float,Description="Fraction of reads supporting alleles">
+##FORMAT=<ID=AMQ,Number=.,Type=Integer,Description="Average mapping quality for each allele present in the genotype">
+##FORMAT=<ID=BCOUNT,Number=4,Type=Integer,Description="Occurrence count for each base at this site (A,C,G,T)">
+##FORMAT=<ID=BQ,Number=.,Type=Integer,Description="Average base quality for reads supporting alleles">
+##FORMAT=<ID=CALLER,Number=.,Type=String,Description="Not provided in original VCF header">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">
+##FORMAT=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward, ref-reverse, alt-forward and alt-reverse bases">
+##FORMAT=<ID=FA,Number=A,Type=Float,Description="Allele fraction of the alternate allele with regard to reference">
+##FORMAT=<ID=FREQ,Number=1,Type=String,Description="Variant allele frequency">
+##FORMAT=<ID=GMQ,Number=1,Type=Integer,Description="Average mapping quality across all reads">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=HP,Number=.,Type=String,Description="Read-backed phasing haplotype identifiers">
+##FORMAT=<ID=IGT,Number=1,Type=String,Description="Genotype when called independently (only filled if called in joint prior mode)">
+##FORMAT=<ID=INDEL,Number=1,Type=Integer,Description="Number of indels">
+##FORMAT=<ID=JGQ,Number=1,Type=Integer,Description="Joint genotype quality (only filled if called in join prior mode)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=PQ,Number=1,Type=Float,Description="Read-backed phasing quality">
+##FORMAT=<ID=PS,Number=1,Type=Integer,Description="ID for set of phased genotypes">
+##FORMAT=<ID=RD,Number=1,Type=Integer,Description="Depth of reference-supporting bases (reads1)">
+##FORMAT=<ID=SB,Number=.,Type=Float,Description="Strand Bias for reads supporting alleles">
+##FORMAT=<ID=SS,Number=1,Type=Integer,Description="Variant status relative to non-adjacent Normal,0=wildtype,1=germline,2=somatic,3=LOH,4=post-transcriptional modification,5=unknown">
+##FORMAT=<ID=SSC,Number=1,Type=Integer,Description="Somatic Score">
+##FORMAT=<ID=START,Number=1,Type=Integer,Description="Number of reads starting at this position">
+##FORMAT=<ID=STOP,Number=1,Type=Integer,Description="Number of reads stopping at this position">
+##FORMAT=<ID=VAQ,Number=1,Type=Integer,Description="Variant allele quality">
+##FORMAT=<ID=VT,Number=1,Type=String,Description="Variant type, SOMATIC or GERMLINE">
+##GATKCommandLine.HaplotypeCaller=<ID=HaplotypeCaller,Version=3.5-0-g36282e4,Date="Fri Apr 06 14:43:01 PDT 2018",Epoch=1523050981703,CommandLineOptions="analysis_type=HaplotypeCaller input_file=[/home/exacloud/lustre1/CompBio/data/mc3_variants/Data_Dec2017/SRR4289732/SRR4289731.reheadered.realigned.cleaned.bam] showFullBamList=false read_buffer_size=null phone_home=AWS gatk_key=null tag=NA read_filter=[] disable_read_filter=[] intervals=null excludeIntervals=null interval_set_rule=UNION interval_merging=ALL interval_padding=0 reference_sequence=../../Summer2017/core_ref_GRCh37d5/genome.fa nonDeterministicRandomSeed=false disableDithering=false maxRuntime=-1 maxRuntimeUnits=MINUTES downsampling_type=BY_SAMPLE downsample_to_fraction=null downsample_to_coverage=500 baq=OFF baqGapOpenPenalty=40.0 refactor_NDN_cigar_string=false fix_misencoded_quality_scores=false allow_potentially_misencoded_quality_scores=false useOriginalQualities=false defaultBaseQualities=-1 performanceLog=null BQSR=null quantize_quals=0 static_quantized_quals=null round_down_quantized=false disable_indel_quals=false emit_original_quals=false preserve_qscores_less_than=6 globalQScorePrior=-1.0 validation_strictness=SILENT remove_program_records=false keep_program_records=false sample_rename_mapping_file=null unsafe=null disable_auto_index_creation_and_locking_when_reading_rods=false no_cmdline_in_header=false sites_only=false never_trim_vcf_format_field=false bcf=false bam_compression=null simplifyBAM=false disable_bam_indexing=false generate_md5=false num_threads=1 num_cpu_threads_per_data_thread=1 num_io_threads=0 monitorThreadEfficiency=false num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false generateShadowBCF=false variant_index_type=DYNAMIC_SEEK variant_index_parameter=-1 reference_window_stop=0 logging_level=INFO log_to_file=null help=false version=false out=/home/exacloud/lustre1/CompBio/data/immunotherapy/germline_calls/hg19/SRR4289731.germline.raw.vcf likelihoodCalculationEngine=PairHMM heterogeneousKmerSizeResolution=COMBO_MIN dbsnp=(RodBinding name= source=UNBOUND) dontTrimActiveRegions=false maxDiscARExtension=25 maxGGAARExtension=300 paddingAroundIndels=150 paddingAroundSNPs=20 comp=[] annotation=[] excludeAnnotation=[] group=[Standard, StandardHCAnnotation] debug=false useFilteredReadsForAnnotations=false emitRefConfidence=NONE bamOutput=null bamWriterType=CALLED_HAPLOTYPES disableOptimizations=false annotateNDA=false heterozygosity=0.001 indel_heterozygosity=1.25E-4 standard_min_confidence_threshold_for_calling=30.0 standard_min_confidence_threshold_for_emitting=30.0 max_alternate_alleles=6 input_prior=[] sample_ploidy=2 genotyping_mode=DISCOVERY alleles=(RodBinding name= source=UNBOUND) contamination_fraction_to_filter=0.0 contamination_fraction_per_sample_file=null p_nonref_model=null exactcallslog=null output_mode=EMIT_VARIANTS_ONLY allSitePLs=false gcpHMM=10 pair_hmm_implementation=VECTOR_LOGLESS_CACHING pair_hmm_sub_implementation=ENABLE_ALL always_load_vector_logless_PairHMM_lib=false phredScaledGlobalReadMismappingRate=45 noFpga=false sample_name=null kmerSize=[10, 25] dontIncreaseKmerSizesForCycles=false allowNonUniqueKmersInRef=false numPruningSamples=1 recoverDanglingHeads=false doNotRecoverDanglingBranches=false minDanglingBranchLength=4 consensus=false maxNumHaplotypesInPopulation=128 errorCorrectKmers=false minPruning=2 debugGraphTransformations=false allowCyclesInKmerGraphToGeneratePaths=false graphOutput=null kmerLengthForReadErrorCorrection=25 minObservationsForKmerToBeSolid=20 GVCFGQBands=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 70, 80, 90, 99] indelSizeToEliminateInRefModel=10 min_base_quality_score=10 includeUmappedReads=false useAllelesTrigger=false doNotRunPhysicalPhasing=true keepRG=null justDetermineActiveRegions=false dontGenotype=false dontUseSoftClippedBases=false captureAssemblyFailureBAM=false errorCorrectReads=false pcr_indel_model=CONSERVATIVE maxReadsInRegionPerSample=10000 minReadsPerAlignmentStart=10 mergeVariantsViaLD=false activityProfileOut=null activeRegionOut=null activeRegionIn=null activeRegionExtension=null forceActive=false activeRegionMaxSize=null bandPassSigma=null maxProbPropagationDistance=50 activeProbabilityThreshold=0.002 min_mapping_quality_score=20 filter_reads_with_N_cigar=false filter_mismatching_base_and_quals=false filter_bases_not_stored=false">
+##GATKCommandLine.ReadBackedPhasing=<ID=ReadBackedPhasing,Version=3.5-0-g36282e4,Date="Tue Jan 29 21:44:13 PST 2019",Epoch=1548827053622,CommandLineOptions="analysis_type=ReadBackedPhasing input_file=[/home/exacloud/lustre1/CompBio/data/mc3_variants/Data_Dec2017/SRR4289732/SRR4289732.reheadered.realigned.cleaned.bam] showFullBamList=false read_buffer_size=null phone_home=AWS gatk_key=null tag=NA read_filter=[] disable_read_filter=[] intervals=[/home/exacloud/lustre1/CompBio/projs/RThompson/immunotherapy/jobs/readbackedphasing/vcfs/Hugo_Pt32.SRR4289732.sorted.vcf] excludeIntervals=null interval_set_rule=UNION interval_merging=ALL interval_padding=0 reference_sequence=/home/exacloud/lustre1/CompBio/projs/RThompson/immunotherapy/jobs/mc3/reference_data/core_ref_GRCh37d5/genome.fa nonDeterministicRandomSeed=false disableDithering=false maxRuntime=-1 maxRuntimeUnits=MINUTES downsampling_type=BY_SAMPLE downsample_to_fraction=null downsample_to_coverage=1000 baq=OFF baqGapOpenPenalty=40.0 refactor_NDN_cigar_string=false fix_misencoded_quality_scores=false allow_potentially_misencoded_quality_scores=false useOriginalQualities=false defaultBaseQualities=-1 performanceLog=null BQSR=null quantize_quals=0 static_quantized_quals=null round_down_quantized=false disable_indel_quals=false emit_original_quals=false preserve_qscores_less_than=6 globalQScorePrior=-1.0 validation_strictness=SILENT remove_program_records=false keep_program_records=false sample_rename_mapping_file=null unsafe=null disable_auto_index_creation_and_locking_when_reading_rods=false no_cmdline_in_header=false sites_only=false never_trim_vcf_format_field=false bcf=false bam_compression=null simplifyBAM=false disable_bam_indexing=false generate_md5=false num_threads=1 num_cpu_threads_per_data_thread=1 num_io_threads=0 monitorThreadEfficiency=false num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false generateShadowBCF=false variant_index_type=DYNAMIC_SEEK variant_index_parameter=-1 reference_window_stop=0 logging_level=INFO log_to_file=null help=false version=false debug=false variant=(RodBinding name=variant source=/home/exacloud/lustre1/CompBio/projs/RThompson/immunotherapy/jobs/readbackedphasing/vcfs/Hugo_Pt32.SRR4289732.sorted.vcf) out=htsjdk.variant.variantcontext.writer.SortingVariantContextWriter cacheWindowSize=20000 maxPhaseSites=10 phaseQualityThresh=20.0 variantStatsFilePrefix=null min_base_quality_score=17 min_mapping_quality_score=20 sampleToPhase=null permitNoSampleOverlap=false enableMergePhasedSegregatingPolymorphismsToMNP=false maxGenomicDistanceForMNP=1 outputMultipleBaseCountsFile=null filter_reads_with_N_cigar=false filter_mismatching_base_and_quals=false filter_bases_not_stored=false">
+##GATKCommandLine.VariantFiltration=<ID=VariantFiltration,Version=3.5-0-g36282e4,Date="Fri Apr 06 18:03:03 PDT 2018",Epoch=1523062983562,CommandLineOptions="analysis_type=VariantFiltration input_file=[] showFullBamList=false read_buffer_size=null phone_home=AWS gatk_key=null tag=NA read_filter=[] disable_read_filter=[] intervals=null excludeIntervals=null interval_set_rule=UNION interval_merging=ALL interval_padding=0 reference_sequence=../../Summer2017/core_ref_GRCh37d5/genome.fa nonDeterministicRandomSeed=false disableDithering=false maxRuntime=-1 maxRuntimeUnits=MINUTES downsampling_type=BY_SAMPLE downsample_to_fraction=null downsample_to_coverage=1000 baq=OFF baqGapOpenPenalty=40.0 refactor_NDN_cigar_string=false fix_misencoded_quality_scores=false allow_potentially_misencoded_quality_scores=false useOriginalQualities=false defaultBaseQualities=-1 performanceLog=null BQSR=null quantize_quals=0 static_quantized_quals=null round_down_quantized=false disable_indel_quals=false emit_original_quals=false preserve_qscores_less_than=6 globalQScorePrior=-1.0 validation_strictness=SILENT remove_program_records=false keep_program_records=false sample_rename_mapping_file=null unsafe=null disable_auto_index_creation_and_locking_when_reading_rods=false no_cmdline_in_header=false sites_only=false never_trim_vcf_format_field=false bcf=false bam_compression=null simplifyBAM=false disable_bam_indexing=false generate_md5=false num_threads=1 num_cpu_threads_per_data_thread=1 num_io_threads=0 monitorThreadEfficiency=false num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false generateShadowBCF=false variant_index_type=DYNAMIC_SEEK variant_index_parameter=-1 reference_window_stop=0 logging_level=INFO log_to_file=null help=false version=false variant=(RodBinding name=variant source=/home/exacloud/lustre1/CompBio/data/immunotherapy/germline_calls/hg19//SRR4289731.germline.raw.vcf) mask=(RodBinding name= source=UNBOUND) out=/home/exacloud/lustre1/CompBio/data/immunotherapy/germline_calls/hg19/SRR4289731.germline.filtered.vcf filterExpression=[QD < 2.0, QUAL < 100.0, DP < 10.0] filterName=[QDFilter, QUALFilter, DPFilter] genotypeFilterExpression=[] genotypeFilterName=[] clusterSize=3 clusterWindowSize=15 maskExtension=0 maskName=Mask filterNotInMask=false missingValuesInExpressionsShouldEvaluateAsFailing=true invalidatePreviousFilters=false invertFilterExpression=false invertGenotypeFilterExpression=false setFilteredGtToNocall=false filter_reads_with_N_cigar=false filter_mismatching_base_and_quals=false filter_bases_not_stored=false">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=BQ,Number=1,Type=Integer,Description="RMS base quality">
+##INFO=<ID=BaseQRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities">
+##INFO=<ID=ClippingRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref number of hard clipped bases">
+##INFO=<ID=DB,Number=0,Type=Flag,Description="dbSNP Membership">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">
+##INFO=<ID=DS,Number=0,Type=Flag,Description="Were any of the samples downsampled?">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=ExcessHet,Number=1,Type=Float,Description="Phred-scaled p-value for exact test of excess heterozygosity">
+##INFO=<ID=FA,Number=1,Type=Float,Description="Overall fraction of reads supporting ALT">
+##INFO=<ID=FS,Number=1,Type=Float,Description="Phred-scaled p-value using Fisher's exact test to detect strand bias">
+##INFO=<ID=GPV,Number=1,Type=Float,Description="Fisher's Exact Test P-value of tumor+normal versus no variant for Germline calls">
+##INFO=<ID=HOMLEN,Number=.,Type=Integer,Description="Length of base pair identical micro-homology at event breakpoints">
+##INFO=<ID=HOMSEQ,Number=.,Type=String,Description="Sequence of base pair identical micro-homology at event breakpoints">
+##INFO=<ID=HaplotypeScore,Number=1,Type=Float,Description="Consistency of the site with at most two segregating haplotypes">
+##INFO=<ID=INDEL,Number=1,Type=Integer,Description="Number of indels for all samples">
+##INFO=<ID=InbreedingCoeff,Number=1,Type=Float,Description="Inbreeding coefficient as estimated from the genotype likelihoods per-sample when compared against the Hardy-Weinberg expectation">
+##INFO=<ID=MC,Number=.,Type=String,Description="Modification base changes at this position">
+##INFO=<ID=MLEAC,Number=A,Type=Integer,Description="Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed">
+##INFO=<ID=MLEAF,Number=A,Type=Float,Description="Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
+##INFO=<ID=MQ0,Number=1,Type=Integer,Description="Total Mapping Quality Zero Reads">
+##INFO=<ID=MQRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities">
+##INFO=<ID=MT,Number=.,Type=String,Description="Modification types at this position">
+##INFO=<ID=MUSE,Number=.,Type=String,Description="Variant called by muse">
+##INFO=<ID=MUTECT,Number=.,Type=String,Description="Variant called by mutect">
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of Samples With Data">
+##INFO=<ID=NTLEN,Number=.,Type=Integer,Description="Number of bases inserted in place of deleted code">
+##INFO=<ID=OLD_CLUMPED,Number=1,Type=String,Description="Original chr:pos:ref:alt encoding">
+##INFO=<ID=OLD_MULTIALLELIC,Number=1,Type=String,Description="Original chr:pos:ref:alt encoding">
+##INFO=<ID=OLD_VARIANT,Number=.,Type=String,Description="Original chr:pos:ref:alt encoding">
+##INFO=<ID=ORIGIN,Number=.,Type=String,Description="Where the call originated from, the tumor DNA, RNA, or both">
+##INFO=<ID=PF,Number=1,Type=Integer,Description="The number of samples carry the variant">
+##INFO=<ID=PINDEL,Number=.,Type=String,Description="Variant called by pindel">
+##INFO=<ID=PhasingInconsistent,Number=0,Type=Flag,Description="Are the reads significantly haplotype-inconsistent?">
+##INFO=<ID=QD,Number=1,Type=Float,Description="Variant Confidence/Quality by Depth">
+##INFO=<ID=RADIA,Number=.,Type=String,Description="Variant called by radia">
+##INFO=<ID=ReadPosRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias">
+##INFO=<ID=SB,Number=1,Type=Float,Description="Strand bias">
+##INFO=<ID=SOMATIC,Number=0,Type=Flag,Description="Indicates if record is a somatic mutation">
+##INFO=<ID=SOMATICSNIPER,Number=.,Type=String,Description="Variant called by somaticsniper">
+##INFO=<ID=SOR,Number=1,Type=Float,Description="Symmetric Odds Ratio of 2x2 contingency table to detect strand bias">
+##INFO=<ID=SPV,Number=1,Type=Float,Description="Fisher's Exact Test P-value of tumor versus normal for Somatic/LOH calls">
+##INFO=<ID=SS,Number=1,Type=Integer,Description="Variant status relative to non-adjacent Normal,0=wildtype,1=germline,2=somatic,3=LOH,4=post-transcriptional modification,5=unknown">
+##INFO=<ID=SSC,Number=1,Type=String,Description="Somatic score in Phred scale (0-255) derived from somatic p-value">
+##INFO=<ID=START,Number=1,Type=Integer,Description="Number of reads starting at this position across all samples">
+##INFO=<ID=STOP,Number=1,Type=Integer,Description="Number of reads stopping at this position across all samples">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=TYPEOFSV,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=VARSCAN,Number=.,Type=String,Description="Variant called by varscan">
+##INFO=<ID=VT,Number=1,Type=String,Description="Variant type, can be SNP, INS or DEL">
+##contig=<ID=1,length=249250621>
+##contig=<ID=2,length=243199373>
+##contig=<ID=3,length=198022430>
+##contig=<ID=4,length=191154276>
+##contig=<ID=5,length=180915260>
+##contig=<ID=6,length=171115067>
+##contig=<ID=7,length=159138663>
+##contig=<ID=8,length=146364022>
+##contig=<ID=9,length=141213431>
+##contig=<ID=10,length=135534747>
+##contig=<ID=11,length=135006516>
+##contig=<ID=12,length=133851895>
+##contig=<ID=13,length=115169878>
+##contig=<ID=14,length=107349540>
+##contig=<ID=15,length=102531392>
+##contig=<ID=16,length=90354753>
+##contig=<ID=17,length=81195210>
+##contig=<ID=18,length=78077248>
+##contig=<ID=19,length=59128983>
+##contig=<ID=20,length=63025520>
+##contig=<ID=21,length=48129895>
+##contig=<ID=22,length=51304566>
+##contig=<ID=X,length=155270560>
+##contig=<ID=Y,length=59373566>
+##contig=<ID=MT,length=16569>
+##contig=<ID=GL000207.1,length=4262>
+##contig=<ID=GL000226.1,length=15008>
+##contig=<ID=GL000229.1,length=19913>
+##contig=<ID=GL000231.1,length=27386>
+##contig=<ID=GL000210.1,length=27682>
+##contig=<ID=GL000239.1,length=33824>
+##contig=<ID=GL000235.1,length=34474>
+##contig=<ID=GL000201.1,length=36148>
+##contig=<ID=GL000247.1,length=36422>
+##contig=<ID=GL000245.1,length=36651>
+##contig=<ID=GL000197.1,length=37175>
+##contig=<ID=GL000203.1,length=37498>
+##contig=<ID=GL000246.1,length=38154>
+##contig=<ID=GL000249.1,length=38502>
+##contig=<ID=GL000196.1,length=38914>
+##contig=<ID=GL000248.1,length=39786>
+##contig=<ID=GL000244.1,length=39929>
+##contig=<ID=GL000238.1,length=39939>
+##contig=<ID=GL000202.1,length=40103>
+##contig=<ID=GL000234.1,length=40531>
+##contig=<ID=GL000232.1,length=40652>
+##contig=<ID=GL000206.1,length=41001>
+##contig=<ID=GL000240.1,length=41933>
+##contig=<ID=GL000236.1,length=41934>
+##contig=<ID=GL000241.1,length=42152>
+##contig=<ID=GL000243.1,length=43341>
+##contig=<ID=GL000242.1,length=43523>
+##contig=<ID=GL000230.1,length=43691>
+##contig=<ID=GL000237.1,length=45867>
+##contig=<ID=GL000233.1,length=45941>
+##contig=<ID=GL000204.1,length=81310>
+##contig=<ID=GL000198.1,length=90085>
+##contig=<ID=GL000208.1,length=92689>
+##contig=<ID=GL000191.1,length=106433>
+##contig=<ID=GL000227.1,length=128374>
+##contig=<ID=GL000228.1,length=129120>
+##contig=<ID=GL000214.1,length=137718>
+##contig=<ID=GL000221.1,length=155397>
+##contig=<ID=GL000209.1,length=159169>
+##contig=<ID=GL000218.1,length=161147>
+##contig=<ID=GL000220.1,length=161802>
+##contig=<ID=GL000213.1,length=164239>
+##contig=<ID=GL000211.1,length=166566>
+##contig=<ID=GL000199.1,length=169874>
+##contig=<ID=GL000217.1,length=172149>
+##contig=<ID=GL000216.1,length=172294>
+##contig=<ID=GL000215.1,length=172545>
+##contig=<ID=GL000205.1,length=174588>
+##contig=<ID=GL000219.1,length=179198>
+##contig=<ID=GL000224.1,length=179693>
+##contig=<ID=GL000223.1,length=180455>
+##contig=<ID=GL000195.1,length=182896>
+##contig=<ID=GL000212.1,length=186858>
+##contig=<ID=GL000222.1,length=186861>
+##contig=<ID=GL000200.1,length=187035>
+##contig=<ID=GL000193.1,length=189789>
+##contig=<ID=GL000194.1,length=191469>
+##contig=<ID=GL000225.1,length=211173>
+##contig=<ID=GL000192.1,length=547496>
+##contig=<ID=NC_007605,length=171823>
+##contig=<ID=hs37d5,length=35477943>
+##fileDate=2019-01-24
+##reference=file:///home/exacloud/lustre1/CompBio/projs/RThompson/immunotherapy/jobs/mc3/reference_data/core_ref_GRCh37d5/genome.fa
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SRR4289732
+1	13656	.	CAG	C	249.73	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-2.571;ClippingRankSum=-0.471;DP=21;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=23.81;MQRankSum=-1.267;QD=11.89;ReadPosRankSum=-0.543;SOR=1.071	GT:AD:DP:GQ:PL:VT	0/1:13,8:21:99:287,0,577:GERMLINE
+1	14464	.	A	T	628.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=1.482;ClippingRankSum=-0.074;DP=144;ExcessHet=3.0103;FS=4.973;MLEAC=1;MLEAF=0.5;MQ=32.21;MQRankSum=1.526;QD=4.37;ReadPosRankSum=0.978;SOR=1.068	GT:AD:DP:GQ:HP:PL:VT	0/1:112,32:144:99:14464-1,14464-2:657,0,3071:GERMLINE
+1	14542	.	A	G	329.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=6.28;ClippingRankSum=1.229;DP=125;ExcessHet=3.0103;FS=13.843;MLEAC=1;MLEAF=0.5;MQ=27.39;MQRankSum=-2.003;QD=2.64;ReadPosRankSum=3.27;SOR=3.307	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:105,20:125:99:14464-1,14464-2:358,0,2873:694.19:GERMLINE
+1	14907	.	A	G	5324.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=7.612;ClippingRankSum=0.315;DP=545;ExcessHet=3.0103;FS=9.37;MLEAC=1;MLEAF=0.5;MQ=36.2;MQRankSum=0.013;QD=9.77;ReadPosRankSum=-1.249;SOR=1.319	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:379,166:545:99:14464-1,14464-2:5353,0,15436:124.92:GERMLINE
+1	14930	.	A	G	6348.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-1.187;ClippingRankSum=0.629;DP=629;ExcessHet=3.0103;FS=6.72;MLEAC=1;MLEAF=0.5;MQ=36.81;MQRankSum=-1.173;QD=10.09;ReadPosRankSum=0.674;SOR=1.101	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:434,195:629:99:14464-1,14464-2:6377,0,17009:17876.93:GERMLINE
+1	15211	.	T	G	1474.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=3.121;ClippingRankSum=2.003;DP=100;ExcessHet=3.0103;FS=2.04;MLEAC=1;MLEAF=0.5;MQ=27.66;MQRankSum=0.559;QD=14.75;ReadPosRankSum=-0.906;SOR=0.46	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:44,56:100:99:14464-1,14464-2:1503,0,1012:1808.79:GERMLINE
+1	15274	.	A	T	634.77	PASS	AC=2;AF=1;AN=2;DP=26;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=25.18;QD=27.6;SOR=4.003	GT:AD:DP:GQ:PL:VT	1/1:0,23:23:69:663,69,0:GERMLINE
+1	15903	.	G	GC	561.73	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-1.033;ClippingRankSum=-0.767;DP=24;ExcessHet=3.0103;FS=8.566;MLEAC=1;MLEAF=0.5;MQ=40.48;MQRankSum=-1.9;QD=23.41;ReadPosRankSum=0.033;SOR=2.833	GT:AD:DP:GQ:PL:VT	0/1:6,18:24:99:599,0,139:GERMLINE
+1	16378	.	T	C	100.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=1.828;ClippingRankSum=-0.858;DP=21;ExcessHet=3.0103;FS=7.605;MLEAC=1;MLEAF=0.5;MQ=29.88;MQRankSum=-0.634;QD=4.8;ReadPosRankSum=0.037;SOR=2.584	GT:AD:DP:GQ:HP:PL:VT	0/1:14,7:21:99:16378-1,16378-2:129,0,363:GERMLINE
+1	16495	.	G	C	172.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-1.638;ClippingRankSum=-0.133;DP=40;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=22.91;MQRankSum=-0.31;PhasingInconsistent;QD=4.32;ReadPosRankSum=-0.369;SOR=0.457	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:28,12:40:99:16378-2,16378-1:201,0,735:97.27:GERMLINE
+1	16571	.	G	A	164.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-4.602;ClippingRankSum=0.736;DP=34;ExcessHet=3.0103;FS=4.901;MLEAC=1;MLEAF=0.5;MQ=22.22;MQRankSum=-0.773;PhasingInconsistent;QD=4.85;ReadPosRankSum=-1.583;SOR=0.051	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:23,11:34:99:16378-1,16378-2:193,0,519:357.16:GERMLINE
+1	16977	.	G	A	858.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-12.17;ClippingRankSum=1.461;DP=399;ExcessHet=3.0103;FS=3.202;MLEAC=1;MLEAF=0.5;MQ=23.91;MQRankSum=1.134;QD=2.16;ReadPosRankSum=0.694;SOR=0.948	GT:AD:DP:GQ:HP:PL:VT	0/1:325,73:398:99:16977-1,16977-2:887,0,9403:GERMLINE
+1	17746	.	A	G	1323.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-1.079;ClippingRankSum=-0.366;DP=112;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=38.93;MQRankSum=-1.132;QD=11.82;ReadPosRankSum=-0.902;SOR=0.425	GT:AD:DP:GQ:HP:PL:VT	0/1:65,47:112:99:17746-1,17746-2:1352,0,2051:GERMLINE
+1	19190	.	GC	G	382.73	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=1.312;ClippingRankSum=0.474;DP=105;ExcessHet=3.0103;FS=9.525;MLEAC=1;MLEAF=0.5;MQ=22.09;MQRankSum=0.855;QD=3.83;ReadPosRankSum=-1.169;SOR=1.893	GT:AD:DP:GQ:PL:VT	0/1:79,21:100:99:420,0,2329:GERMLINE
+1	20245	.	G	A	158.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-3.323;ClippingRankSum=0.259;DP=29;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=29.39;MQRankSum=0.872;QD=5.47;ReadPosRankSum=-1.579;SOR=0.409	GT:AD:DP:GQ:HP:PL:VT	0/1:20,9:29:99:20245-1,20245-2:187,0,550:GERMLINE
+1	20304	.	G	C	251.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-1.01;ClippingRankSum=-0.241;DP=17;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=26.3;MQRankSum=0.914;PhasingInconsistent;QD=14.81;ReadPosRankSum=-0.433;SOR=0.446	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:8,9:17:99:20245-1,20245-2:280,0,216:79.83:GERMLINE
+1	20321	.	A	C	221.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=2.177;ClippingRankSum=-0.627;DP=14;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=22.87;MQRankSum=1.365;PhasingInconsistent;QD=15.84;ReadPosRankSum=-0.471;SOR=0.283	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:6,8:14:99:20245-1,20245-2:250,0,172:200.03:GERMLINE
+1	20467	.	C	T	115.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-2.843;ClippingRankSum=1.191;DP=12;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=32.93;MQRankSum=-1.073;PhasingInconsistent;QD=9.65;ReadPosRankSum=-1.813;SOR=0.693	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:6,6:12:99:20245-1,20245-2:144,0,191:79.83:GERMLINE
+1	57856	.	T	A	555.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=2.195;ClippingRankSum=0.223;DP=44;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=35.76;MQRankSum=0.458;QD=12.63;ReadPosRankSum=-0.833;SOR=1.681	GT:AD:DP:GQ:HP:PL:VT	0/1:22,22:44:99:57856-1,57856-2:584,0,557:GERMLINE
+1	63735	.	CCTA	C	2857.73	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-1.98;ClippingRankSum=1.201;DP=205;ExcessHet=3.0103;FS=2.185;MLEAC=1;MLEAF=0.5;MQ=34.34;MQRankSum=0.413;QD=14.66;ReadPosRankSum=1.29;SOR=0.886	GT:AD:DP:GQ:PL:VT	0/1:117,78:195:99:2895,0,5221:GERMLINE
+1	69270	.	A	G	1733.77	PASS	AC=2;AF=1;AN=2;BaseQRankSum=-1.335;ClippingRankSum=0.54;DP=61;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=26.65;MQRankSum=0.824;QD=28.42;ReadPosRankSum=-0.142;SOR=6.837	GT:AD:DP:GQ:PL:VT	1/1:1,60:61:99:1762,153,0:GERMLINE
+1	69511	.	A	G	4859.77	PASS	AC=2;AF=1;AN=2;DP=159;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=32.04;QD=30.76;SOR=1.04	GT:AD:DP:GQ:PL:VT	1/1:0,158:158:99:4888,474,0:GERMLINE
+1	69761	.	A	T	1061.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=4.754;ClippingRankSum=-0.162;DP=79;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=32.17;MQRankSum=-1.28;QD=13.44;ReadPosRankSum=0.937;SOR=0.774	GT:AD:DP:GQ:HP:PL:VT	0/1:38,41:79:99:69761-1,69761-2:1090,0,946:GERMLINE
+1	69897	.	T	C	253.53	PASS	AC=2;AF=1;AN=2;BaseQRankSum=0.158;ClippingRankSum=-1.423;DP=11;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=27.95;MQRankSum=-0.791;QD=23.05;ReadPosRankSum=-0.474;SOR=0.399	GT:AD:DP:GQ:PL:VT	1/1:1,10:11:3:280,3,0:GERMLINE
+1	129285	.	G	A	1506.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-5.699;ClippingRankSum=-2.068;DP=194;ExcessHet=3.0103;FS=38.142;MLEAC=1;MLEAF=0.5;MQ=25.73;MQRankSum=-4.305;QD=7.81;ReadPosRankSum=0.528;SOR=1.384	GT:AD:DP:GQ:HP:PL:VT	0/1:108,85:193:99:129285-1,129285-2:1535,0,2457:GERMLINE
+1	133483	.	G	T	332.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-2.286;ClippingRankSum=1.016;DP=24;ExcessHet=3.0103;FS=5.131;MLEAC=1;MLEAF=0.5;MQ=25;MQRankSum=-0.381;QD=13.87;ReadPosRankSum=-0.508;SOR=2.303	GT:AD:DP:GQ:HP:PL:VT	0/1:7,17:24:99:133483-1,133483-2:361,0,123:GERMLINE
+1	135465	.	C	T	360.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=3.379;ClippingRankSum=-0.438;DP=47;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=34.83;MQRankSum=1.268;QD=7.68;ReadPosRankSum=1.426;SOR=0.249	GT:AD:DP:GQ:HP:PL:VT	0/1:31,16:47:99:135465-1,135465-2:389,0,835:GERMLINE
+1	136048	.	C	T	3065.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=2.574;ClippingRankSum=0.108;DP=247;ExcessHet=3.0103;FS=0.472;MLEAC=1;MLEAF=0.5;MQ=22.05;MQRankSum=0.208;QD=12.41;ReadPosRankSum=-0.966;SOR=0.659	GT:AD:DP:GQ:HP:PL:VT	0/1:100,147:247:99:136048-1,136048-2:3094,0,1874:GERMLINE
+1	137622	.	G	A	558.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-3.367;ClippingRankSum=-1.427;DP=78;ExcessHet=3.0103;FS=16.969;MLEAC=1;MLEAF=0.5;MQ=21.61;MQRankSum=-2.362;QD=7.16;ReadPosRankSum=2.118;SOR=0.082	GT:AD:DP:GQ:HP:PL:VT	0/1:46,32:78:99:137622-1,137622-2:587,0,1185:GERMLINE
+1	137825	.	G	A	840.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-2.659;ClippingRankSum=-0.306;DP=55;ExcessHet=3.0103;FS=4.315;MLEAC=1;MLEAF=0.5;MQ=26.14;MQRankSum=-0.788;QD=15.29;ReadPosRankSum=0.862;SOR=1.379	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:16,39:55:99:137622-1,137622-2:869,0,285:684.16:GERMLINE
+1	138156	.	G	T	118.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=1.194;ClippingRankSum=0.678;DP=23;ExcessHet=3.0103;FS=4.619;MLEAC=1;MLEAF=0.5;MQ=22.31;MQRankSum=-0.032;QD=5.16;ReadPosRankSum=-0.936;SOR=2.179	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:15,8:23:99:137622-1,137622-2:147,0,320:121.68:GERMLINE
+1	231504	.	G	A	546.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-2.637;ClippingRankSum=-0.76;DP=39;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=22;MQRankSum=0.343;QD=14.02;ReadPosRankSum=1.475;SOR=0.784	GT:AD:DP:GQ:HP:PL:VT	0/1:13,26:39:99:231504-1,231504-2:575,0,214:GERMLINE
+1	234378	.	A	G	866.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-0.933;ClippingRankSum=-0.359;DP=73;ExcessHet=3.0103;FS=5.56;MLEAC=1;MLEAF=0.5;MQ=38.87;MQRankSum=0.447;QD=11.87;ReadPosRankSum=-2.6;SOR=0.24	GT:AD:DP:GQ:HP:PL:VT	0/1:38,35:73:99:234378-1,234378-2:895,0,1034:GERMLINE
+1	234481	.	T	A	1024.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-1.299;ClippingRankSum=-0.773;DP=62;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=42.56;MQRankSum=-0.698;PhasingInconsistent;QD=16.8;ReadPosRankSum=1.029;SOR=0.665	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:22,39:61:99:234378-1,234378-2:1053,0,532:1109.01:GERMLINE
+1	234609	.	T	C	346.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=1.92;ClippingRankSum=-0.89;DP=18;ExcessHet=3.0103;FS=10.086;MLEAC=1;MLEAF=0.5;MQ=34.95;MQRankSum=2.763;QD=19.26;ReadPosRankSum=-0.047;SOR=4.125	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:6,12:18:99:234378-1,234378-2:375,0,131:543.90:GERMLINE
+1	568214	.	C	T	558.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-1.532;ClippingRankSum=0.217;DP=56;ExcessHet=3.0103;FS=1.044;MLEAC=1;MLEAF=0.5;MQ=51.35;MQRankSum=-1.915;QD=9.98;ReadPosRankSum=-0.683;SOR=0.633	GT:AD:DP:GQ:HP:PL:VT	0/1:33,23:56:99:568214-1,568214-2:587,0,955:GERMLINE
+1	662029	.	G	A	487.77	PASS	AC=2;AF=1;AN=2;BaseQRankSum=-1.734;ClippingRankSum=1.261;DP=22;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=21.05;MQRankSum=-1.576;QD=22.17;ReadPosRankSum=0;SOR=4.804	GT:AD:DP:GQ:PL:VT	1/1:1,21:22:40:516,40,0:GERMLINE
+1	662201	.	G	A	435.77	PASS	AC=2;AF=1;AN=2;BaseQRankSum=1.552;ClippingRankSum=-0.274;DP=19;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=21.79;MQRankSum=-0.274;QD=22.94;ReadPosRankSum=1.004;SOR=1.609	GT:AD:DP:GQ:PL:VT	1/1:1,18:19:47:464,47,0:GERMLINE
+1	662857	.	G	A	462.77	PASS	AC=2;AF=1;AN=2;DP=16;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=29.86;QD=28.92;SOR=0.693	GT:AD:DP:GQ:PL:VT	1/1:0,16:16:48:491,48,0:GERMLINE
+1	663097	.	G	C	2622.77	PASS	AC=2;AF=1;AN=2;DP=100;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=22.92;QD=26.23;SOR=1.993	GT:AD:DP:GQ:PL:VT	1/1:0,100:100:99:2651,300,0:GERMLINE
+1	664271	.	C	A	152.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-3.154;ClippingRankSum=-0.222;DP=18;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=20.29;MQRankSum=-1.2;QD=8.49;ReadPosRankSum=0.666;SOR=0.512	GT:AD:DP:GQ:HP:PL:VT	0/1:10,8:18:99:664271-1,664271-2:181,0,196:GERMLINE
+1	664468	.	G	T	274.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-4.009;ClippingRankSum=-1.403;DP=58;ExcessHet=3.0103;FS=5.711;MLEAC=1;MLEAF=0.5;MQ=24.16;MQRankSum=0.966;PhasingInconsistent;QD=4.74;ReadPosRankSum=1.555;SOR=1.493	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:40,18:58:99:664271-2,664271-1:303,0,879:109.60:GERMLINE
+1	671892	.	C	T	543.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=0.01;ClippingRankSum=-0.884;DP=51;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=33.59;MQRankSum=1.056;QD=10.66;ReadPosRankSum=0.599;SOR=0.73	GT:AD:DP:GQ:HP:PL:VT	0/1:29,22:51:99:671892-1,671892-2:572,0,843:GERMLINE
+1	672209	.	G	A	121.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-4.333;ClippingRankSum=-0.843;DP=50;ExcessHet=3.0103;FS=20.692;MLEAC=1;MLEAF=0.5;MQ=37.07;MQRankSum=-2.295;PhasingInconsistent;QD=2.44;ReadPosRankSum=0.796;SOR=0.016	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:39,11:50:99:671892-2,671892-1:150,0,1187:23.39:GERMLINE
+1	709135	.	T	C	115.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=3.005;ClippingRankSum=-0.177;DP=15;ExcessHet=3.0103;FS=2.187;MLEAC=1;MLEAF=0.5;MQ=32.42;MQRankSum=-0.53;QD=7.72;ReadPosRankSum=0.295;SOR=1.371	GT:AD:DP:GQ:HP:PL:VT	0/1:9,6:15:99:709135-1,709135-2:144,0,235:GERMLINE
+1	709297	.	T	C	125.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=4.048;ClippingRankSum=1.444;DP=25;ExcessHet=3.0103;FS=20.017;MLEAC=1;MLEAF=0.5;MQ=20.25;MQRankSum=1.33;QD=5.03;ReadPosRankSum=1.104;SOR=0.005	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:16,9:25:99:709135-2,709135-1:154,0,320:104.42:GERMLINE
+1	718555	.	T	C	1957.77	PASS	AC=2;AF=1;AN=2;DP=54;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=49.13;QD=32.61;SOR=2.876	GT:AD:DP:GQ:PL:VT	1/1:0,54:54:99:1986,162,0:GERMLINE
+1	744304	.	C	T	273.77	PASS	AC=2;AF=1;AN=2;DP=10;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=25.63;QD=27.38;SOR=4.804	GT:AD:DP:GQ:PL:VT	1/1:0,10:10:30:302,30,0:GERMLINE
+1	745370	.	TA	T	127.73	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-1.604;ClippingRankSum=1.035;DP=57;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=40.01;MQRankSum=-3.151;QD=2.32;ReadPosRankSum=-2.104;SOR=0.346	GT:AD:DP:GQ:PL:VT	0/1:46,9:55:99:165,0,1555:GERMLINE
+1	752721	.	A	G	3691.77	PASS	AC=2;AF=1;AN=2;DP=95;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=60;QD=38.51;SOR=6.294	GT:AD:DP:GQ:PL:VT	1/1:0,95:95:99:3720,286,0:GERMLINE
+1	752894	.	T	C	1858.77	PASS	AC=2;AF=1;AN=2;DP=56;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=39.79;QD=33.19;SOR=8.086	GT:AD:DP:GQ:PL:VT	1/1:0,56:56:99:1887,168,0:GERMLINE
+1	753269	.	C	G	1225.77	PASS	AC=2;AF=1;AN=2;DP=36;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=32.46;QD=34.05;SOR=7.223	GT:AD:DP:GQ:PL:VT	1/1:0,36:36:99:1254,108,0:GERMLINE
+1	753405	.	C	A	2038.77	PASS	AC=2;AF=1;AN=2;DP=66;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=35.65;QD=30.89;SOR=1.112	GT:AD:DP:GQ:PL:VT	1/1:0,66:66:99:2067,198,0:GERMLINE
+1	753425	.	T	C	1063.77	PASS	AC=2;AF=1;AN=2;DP=32;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=36.79;QD=33.24;SOR=0.957	GT:AD:DP:GQ:PL:VT	1/1:0,32:32:96:1092,96,0:GERMLINE
+1	753474	.	C	G	1092.77	PASS	AC=2;AF=1;AN=2;DP=32;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=43.95;QD=34.15;SOR=2.765	GT:AD:DP:GQ:PL:VT	1/1:0,32:32:96:1121,96,0:GERMLINE
+1	761957	.	A	AT	1532.73	PASS	AC=2;AF=1;AN=2;DP=38;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=38.34;QD=28.52;SOR=7.328	GT:AD:DP:GQ:PL:VT	1/1:0,38:38:99:1570,117,0:GERMLINE
+1	762273	.	G	A	3213.77	PASS	AC=2;AF=1;AN=2;DP=95;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=37.23;QD=33.83;SOR=2.135	GT:AD:DP:GQ:PL:VT	1/1:0,95:95:99:3242,286,0:GERMLINE
+1	762632	.	T	A	6657.77	PASS	AC=2;AF=1;AN=2;BaseQRankSum=2.184;ClippingRankSum=0.985;DP=201;ExcessHet=3.0103;FS=9.146;MLEAC=2;MLEAF=1;MQ=43.03;MQRankSum=2.878;QD=33.12;ReadPosRankSum=-2.635;SOR=0.04	GT:AD:DP:GQ:PL:VT	1/1:4,197:201:99:6686,478,0:GERMLINE
+1	801943	.	C	T	3561.77	PASS	AC=2;AF=1;AN=2;BaseQRankSum=1.697;ClippingRankSum=0.052;DP=100;ExcessHet=3.0103;FS=4.771;MLEAC=2;MLEAF=1;MQ=50.57;MQRankSum=0.822;QD=28.67;ReadPosRankSum=1.487;SOR=1.475	GT:AD:DP:GQ:PL:VT	1/1:1,98:99:99:3590,218,0:GERMLINE
+1	801957	.	CCTGCACTCACATCCCTGACGTCCTCCCGTGCCCTCACGTGGTCCTCCCT	C	1677.73	PASS	AC=2;AF=1;AN=2;BaseQRankSum=1.892;ClippingRankSum=0.781;DP=89;ExcessHet=3.0103;FS=0;MLEAC=2;MLEAF=1;MQ=48.91;MQRankSum=-0.066;QD=25.04;ReadPosRankSum=0.728;SOR=1.179	GT:AD:DP:GQ:PL:VT	1/1:4,63:67:38:1715,38,0:GERMLINE
+hs37d5	35027814	.	T	C	178.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=2.637;ClippingRankSum=-0.717;DP=11;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=56.13;MQRankSum=-1.408;QD=16.25;ReadPosRankSum=1.031;SOR=0.859	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:5,6:11:99:35027800-1,35027800-2:207,0,138:468.44:GERMLINE
+hs37d5	35027829	.	C	T	202.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-1.733;ClippingRankSum=0.578;DP=16;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=56.55;MQRankSum=-0.683;QD=12.67;ReadPosRankSum=0.578;SOR=0.18	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:8,8:16:99:35027800-1,35027800-2:231,0,246:489.97:GERMLINE
+hs37d5	35027880	.	C	T	181.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=0.405;ClippingRankSum=0.752;DP=15;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=53.61;MQRankSum=-0.637;QD=12.12;ReadPosRankSum=1.331;SOR=0.551	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:8,7:15:99:35027800-1,35027800-2:210,0,224:489.97:GERMLINE
+hs37d5	35027909	.	C	G	197.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-2.176;ClippingRankSum=-0.872;DP=15;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=46.36;MQRankSum=-0.556;QD=13.18;ReadPosRankSum=-0.993;SOR=0.892	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:7,8:15:99:35027800-1,35027800-2:226,0,233:423.41:GERMLINE
+hs37d5	35027982	.	G	A	126.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=-2.637;ClippingRankSum=-1.186;DP=11;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=38.81;MQRankSum=-1.186;QD=11.52;ReadPosRankSum=0.143;SOR=0.859	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:5,6:11:99:35027800-1,35027800-2:155,0,166:331.90:GERMLINE
+hs37d5	35029456	.	A	C	241.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=0.752;ClippingRankSum=0.637;DP=15;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=32.81;MQRankSum=0.174;QD=16.12;ReadPosRankSum=-0.868;SOR=0.941	GT:AD:DP:GQ:HP:PL:VT	0/1:8,7:15:99:35029456-1,35029456-2:270,0,463:GERMLINE
+hs37d5	35029459	.	A	C	241.77	PASS	AC=1;AF=0.5;AN=2;BaseQRankSum=1.215;ClippingRankSum=0.289;DP=15;ExcessHet=3.0103;FS=0;MLEAC=1;MLEAF=0.5;MQ=32.81;MQRankSum=-0.405;QD=16.12;ReadPosRankSum=-1.562;SOR=0.941	GT:AD:DP:GQ:HP:PL:PQ:VT	0/1:8,7:15:99:35029456-1,35029456-2:270,0,463:372.23:GERMLINE
